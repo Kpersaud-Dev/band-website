@@ -108,15 +108,17 @@ html, body {
 .main-footer-container {
     display: flex;
     align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 .main-footer-container ul {
-    flex-grow: 1;
     text-align: end;
+    display: flex;
 }
 
 .footer-nav li {
-    padding: 0 .5em;
+    padding: 0 1em;
 }
 
 .footer-nav li a i {
@@ -169,26 +171,23 @@ html, body {
 }
 
 .tour-item {
-    display: inline-block;
-    padding-right: .5em;
+    display: flex;
+    
 }
 
 .tour-date {
     color: #555;
     font-weight: bold;
-    width: 11%;
+
 }
 
 .tour-city {
-    width: 24%;
 }
 
 .tour-arena {
-    width: 42%;
 }
 
 .tour-btn {
-    max-width: 19%;
 }
 
 .btn-primary {
@@ -341,3 +340,32 @@ html, body {
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+
+   @media only screen and (min-width: 768px) {
+    /* Style adjustments for viewports that meet the condition */
+
+    /***** Tablet Styles *****/
+
+    .tour-item {
+        display: inline-block;
+        padding: .5em;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+
+    /***** Desktop Styles *****/
+
+    .tour-item {
+        
+    }
+  }
